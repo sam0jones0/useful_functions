@@ -1,3 +1,8 @@
+"""Function to create a binary tree from a provided list of values. List of values is expected
+to be in the format found in most binary tree LeetCode questions.
+"""
+
+
 from collections import deque
 from typing import List, Optional
 
