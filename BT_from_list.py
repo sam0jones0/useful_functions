@@ -29,11 +29,10 @@ def gen_tree(vals: List[Optional[int]]) -> Optional[TreeNode]:
             node.left = left
             queue.append(left)
         idx += 1
-        if idx < len(vals):
-            if vals[idx]:
-                right = TreeNode(vals[idx])
-                node.right = right
-                queue.append(right)
+        if idx < len(vals) and vals[idx]:
+            right = TreeNode(vals[idx])
+            node.right = right
+            queue.append(right)
         idx += 1
 
     return root
